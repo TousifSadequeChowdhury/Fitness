@@ -556,3 +556,150 @@ color: var(--second-bg-color);
   max-width: 380px;
 }
 }
+/* Devices from 577px to 992px*/
+/* @media (max-width: 992px) {
+} */
+/* Devices from 0px to 576px */
+@media (max-width: 576px) {
+  #header {
+    min-height: 80px;
+    padding-top: 21px;
+}
+  .header_nav {
+    justify-content: space-between;
+    padding: 0px 20px;
+  }
+  .brand_name{
+    font-size: 25px;
+  }
+  .nav_item {
+    display: none;
+  }
+  .bars {
+    color: var(--text-color);
+    font-size: 25px;
+    display: block;
+  }
+  /* hero part  */
+  .hero_div {
+    display: block;
+    padding: 0px 20px;
+  }
+  .hero_text_div {
+    width: 100%;
+  }
+  .hero_text_div h1 {
+    font-size: 50px;
+}
+  .hero_font_style{
+    margin: 0px 15px;
+    font-size: 5rem;
+  }
+  .hero_img_div {
+    padding-top: 50px;
+    text-align: center;
+    display: block;
+  }
+  .hero_img_div img{
+    width: 100%;
+       display: block;
+  }
+  .btn {
+    font-size: 17px;
+    padding: 13px 26px;
+  }
+  .btn-download {
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+  .hero_Workout_videos_div {
+    position: absolute;
+    right: 20px;
+    top: 185px;
+  }
+  .hero_videos_tutorial_div {
+    position: absolute;
+    left: 10px;
+    bottom: 50px;
+  }
+  /* habit Image section */
+.habits_div {
+    margin-top: 30px; /* Add spacing between hero_div and habits_div */
+    padding:90px;
+  }
+  .habits_text_div p {
+    width: 100%;
+    padding: 0px 60px;
+  }
+  .habits_img_div {
+    grid-template-columns: auto;
+    margin: 0px 61px;
+  }
+  /* Run div  */
+  .Run_div {
+    display: block;
+    padding: 25px;
+    margin: 0px 20px;
+  }
+  .Run_text_div {
+    width: 100%;
+  }
+  .Run_text_div h1 {
+    margin-right: 0px;
+  }
+  .Run_text_div p {
+    width: 100%;
+  }
+  .join_btn_style {
+    width: 100%;
+    padding: 20px 0px;
+  }
+  .run_img_div_style {
+    margin: 0px;
+    padding-top: 30px;
+  }
+  /* bmi claculator  */
+  .bmiCalculator_text_div p {
+    width: 100%;
+}
+.bmiCalculator_menu {
+  margin: 0px 20px;
+  row-gap: 42px;
+}
+.form_input_div {
+  column-gap: 10px;
+}
+
+  /* Team_div */
+  .Team_div {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 0px 20px;
+    gap: 18px;
+  }
+  .team_img_div_style img {
+    width: 100%;
+    height: auto;
+  }
+  .text_title {
+    font-size: 15px;
+  }
+
+  /* Footer */
+  .footer_div {
+    margin: 0px 20px;
+  }
+  .flex_first_item {
+    flex: 100%;
+    margin-bottom: 30px;
+  }
+  .flex_second_item {
+    flex: 100%;
+
+    margin-bottom: 30px;
+  }
+  .footer_copyright {
+    margin: 0px 20px;
+
+  }
+}
