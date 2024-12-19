@@ -635,7 +635,7 @@ color: var(--second-bg-color);
     grid-template-columns: auto;
     margin: 0px 61px;
   }
-  /* Run div  */
+
   .Run_div {
     display: block;
     padding: 25px;
