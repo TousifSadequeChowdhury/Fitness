@@ -12,6 +12,11 @@
   outline: none;
   scroll-behavior: smooth;
 }
+.wrapper {
+  max-width: 1400px; /* Set the maximum width you want */
+  margin: 0 auto; /* Centers the content horizontally */
+  padding: 0 px; /* Add padding on the sides for spacing */
+}
 #body{
     background: linear-gradient(
         0deg,
@@ -362,7 +367,7 @@ color: var(--second-bg-color);
   gap: 50px;
 }
 .Run_text_div {
-  width: 600px;
+  width:50% ;
 }
 .Run_text_div h1 {
   font-size: 40px;
@@ -371,7 +376,7 @@ color: var(--second-bg-color);
 }
 
 .Run_text_div p {
-  width: 494px;
+  /* width: 494px; */
   text-align: left;
   margin: 25px 0px;
 }
@@ -380,10 +385,13 @@ color: var(--second-bg-color);
 }
 .run_img_div_style {
   margin: 20px 30px;
+  width: 50%;
+
 }
 .run_img_div_style img {
   width: 100%;
-  height: auto;
+  object-fit: cover;
+  height: 300px;
   border-radius: 20px;
 }
 /* ======================================== */
@@ -391,7 +399,7 @@ color: var(--second-bg-color);
 .Team_div {
   display: grid;
   align-items: center;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 0.5fr 0.5fr 0.5fr;
   color: var(--text-color);
   background: rgba(160, 159, 159, 0.096);
   margin: 0px 170px;
@@ -403,7 +411,6 @@ color: var(--second-bg-color);
   position: relative;
 }
 .team_img_div_style img {
-  width: 100%;
   height: 290px;
   border-radius: 20px;
   opacity: 0.7;
@@ -484,7 +491,7 @@ color: var(--second-bg-color);
 /* =========================================================================================================================================================================================================================================== */
 /* Desktop-First Media Queries */
 /* Devices from 993px to 1200px */
-@media (max-width: 1200px) {
+@media (max-width: 1440px) {
   .hero_text_div {
     width: 370px;
   }
@@ -517,19 +524,28 @@ color: var(--second-bg-color);
 
   /* run div  */
   .Run_div {
-    margin: 0px 82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
   .Run_text_div h1 {
     margin-right: 40px;
   }
   .Run_text_div p {
-    width: 363px;
+    /* width: 363px; */
   }
   .join_btn_style {
     padding: 20px 91px;
   }
+  .run_img_div_style img {
+    object-fit: cover;
+     height: 300px;
+  }
+  
   .run_img_div_style {
-    margin: 0px;
+    width: 50%; 
+    height: auto; 
+
   }
   /* Bmi calculator  */
   .bmiCalculator_menu {
@@ -560,7 +576,7 @@ color: var(--second-bg-color);
 /* @media (max-width: 992px) {
 } */
 /* Devices from 0px to 576px */
-@media (max-width: 576px) {
+@media (max-width: 776px) {
   #header {
     min-height: 80px;
     padding-top: 21px;
@@ -584,6 +600,7 @@ color: var(--second-bg-color);
   .hero_div {
     display: block;
     padding: 0px 20px;
+    width: 100%;
   }
   .hero_text_div {
     width: 100%;
@@ -595,15 +612,13 @@ color: var(--second-bg-color);
     margin: 0px 15px;
     font-size: 5rem;
   }
-  .hero_img_div {
-    padding-top: 50px;
-    text-align: center;
-    display: block;
-  }
-  .hero_img_div img{
-    width: 100%;
-       display: block;
-  }
+.hero_img_div {
+  padding-top: 50px;
+  text-align: center;
+  display: block;
+  overflow: hidden; /* Prevent any overflow of image */
+}
+  
   .btn {
     font-size: 17px;
     padding: 13px 26px;
@@ -623,23 +638,27 @@ color: var(--second-bg-color);
     bottom: 50px;
   }
   /* habit Image section */
+  .habits {
+   margin-top: 20px;   
+  }
 .habits_div {
-    margin-top: 30px; /* Add spacing between hero_div and habits_div */
+    margin-top: 30px; 
     padding:90px;
   }
   .habits_text_div p {
     width: 100%;
-    padding: 0px 60px;
+    padding-top: 90px; 
+
   }
   .habits_img_div {
     grid-template-columns: auto;
-    margin: 0px 61px;
-  }
+    }
 
   .Run_div {
     display: block;
     padding: 25px;
     margin: 0px 20px;
+    width: 100%;
   }
   .Run_text_div {
     width: 100%;
@@ -658,6 +677,11 @@ color: var(--second-bg-color);
     margin: 0px;
     padding-top: 30px;
   }
+    .run_img_div_style img {
+      width: 200%; /* Ensure the image is responsive */
+    height: 300px; /* Maintain aspect ratio */
+  }
+
   /* bmi claculator  */
   .bmiCalculator_text_div p {
     width: 100%;
